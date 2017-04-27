@@ -24,18 +24,24 @@ class Selection extends Component {
       super();
       this.state = {
         selection:[],
-        value: "tomer"
+        value: null,
+        location: null,
+        name: null
       };  
       this.handleSelect = this.handleSelect.bind(this);
     }
 
  handleSelect (value) {
-    console.log(value);
     this.setState({ value: value });
+    this.props.selected(this.state.name ,this.state.location, value.value);
 
   }
   componentDidMount() {     
-      this.setState({ selection: this.props.selection });
+      this.setState({ 
+        selection: this.props.selection ,
+        location: this.props.location,
+        name: this.props.name
+      });
   }
     render () {
         return (
@@ -49,11 +55,21 @@ class SearchBar extends Component {
   constructor() {
         super();
         this.state = {
-          seleted :[{activity: null}, {area: null}, {group_size: null}, {price: null}]
-        };  
+          selected :[{activity: null}, {area: null}, {group_size: null}, {price: null}]
+        };
+        this.handleSelectState = this.handleSelectState.bind(this); 
+        this.handleSearch = this.handleSearch.bind(this);  
+
       }
-  handleSelectState(field, value){
-    this.setState({ value: value });
+  handleSelectState(name ,location, value){
+    var selected = this.state.selected.slice();
+    selected[location][name] = value;
+    this.setState({ selected: selected });
+    //console.log(this.state.selected);
+  }
+
+  handleSearch(){
+    this.props.sendQueryData(this.state.selected);
   }
   render() {
     var options = {
@@ -80,25 +96,23 @@ class SearchBar extends Component {
 
        <div className="row search-bar">
             <Col sm={2} smOffset={1}>
-              <Selection selection={options.activies} selected={this.handleSelectState} placeholder="Choose Avtivity"/>
+              <Selection name={"activity"} location={0} selection={options.activies} selected={this.handleSelectState} placeholder="Choose Avtivity"/>
              </Col>
              <Col sm={2}>
-              <Selection selection={options.areas} selected={this.handleSelectState} placeholder="Choose Area"/>
+              <Selection name={"area"} location={1} selection={options.areas} selected={this.handleSelectState} placeholder="Choose Area"/>
             </Col>
             <Col sm={2}>
-              <Selection selection={options.group_size} selected={this.handleSelectState} placeholder="Groups Size"/>
+              <Selection name={"group_size"} location={2} selection={options.group_size} selected={this.handleSelectState} placeholder="Groups Size"/>
             </Col>
             <Col sm={4}>
               <Col sm={6}>
-              <FormControl type="text" placeholder="Price per hour (max)" />
+              <FormControl name={"group_size"} type="text" onChange={(e) => this.handleSelectState("price",3,e.target.value)} placeholder="Price per hour (max)" />
               </Col>
               <Col sm={6}>
-              <button type="submit" className="btn btn-success" onClick={() => this.handleSelectState}>Look Up Groups</button>
+              <button type="submit" className="btn btn-success" onClick={() => this.handleSearch()}>Look Up Groups</button>
               </Col>
             </Col>
-
       </div>
-    
     );
   }
 }
