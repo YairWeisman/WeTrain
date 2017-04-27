@@ -1,0 +1,238 @@
+{
+	"trainers" : [
+		{
+			"name" : "Raz Asaf",
+			"imageUrl" : "http://www.limudnaim.co.il/sites/default/files/imagecache/profile-pic/trainer_profile/x32411.jpeg.pagespeed.ic.BuAazftsra.jpg",
+			"desctiption" : "I like to pee",
+			"phoneNumber" : "052000000000",
+			"address" : {
+				"streetAddress" : "",
+				"city" : "",
+				"state" : "",
+				"zipCode" : "",
+				"country" : ""
+			},
+			"area" : 1,
+			"sessions" : [
+				{
+					"activity" : 1,
+					"days" : [0,1,6],
+					"duration" : 30,
+					"groupMaxSize" : 7,
+					"pricePerSession" : 70,
+					"deals" :
+					{
+						"0" : "0",
+						"5" : "65",
+						"10" : "45",
+						"20" : "35"
+					}
+				},
+				{
+					"activity" : 2,
+					"days" : [2,5],
+					"duration" : 30,
+					"groupMaxSize" : 5,
+					"pricePerSession" : 60,
+					"deals" :
+					{
+						"0" : "0",
+						"5" : "55",
+						"10" : "35",
+						"20" : "25"
+					}
+				},
+
+			],
+		},{
+			"name" : "Elad Iash",
+			"imageUrl" : "http://www.limudnaim.co.il/sites/default/files/imagecache/profile-pic/trainer_profile/x9615.jpeg.pagespeed.ic.uPzF_aPYkf.jpg",
+			"desctiption" : "I like to poop",
+			"phoneNumber" : "052000000001",
+			"address" : {
+				"streetAddress" : "",
+				"city" : "",
+				"state" : "",
+				"zipCode" : "",
+				"country" : ""
+			},
+			"area" : 1,
+			"sessions" : [
+				{
+					"activity" : 1,
+					"days" : [0,1],
+					"duration" : 30,
+					"groupMaxSize" : 7,
+					"pricePerSession" : 90,
+					"deals" :
+					{
+						"0" : "45",
+						"5" : "85",
+						"10" : "80",
+						"20" : "75"
+					}
+				},
+				{
+					"activity" : 2,
+					"days" : [2,3],
+					"duration" : 45,
+					"groupMaxSize" : 10,
+					"pricePerSession" : 78,
+					"deals" :
+					{
+						"0" : "39",
+						"5" : "73",
+						"10" : "70",
+						"20" : "65"
+					}
+				},
+
+			],
+		},{
+			"name" : "Meirav Elisha",
+			"imageUrl" : "http://www.limudnaim.co.il/sites/default/files/imagecache/profile-pic/trainer_profile/x14539.jpg.pagespeed.ic.BxhDwuArKR.jpg",
+			"desctiption" : "I like to drink pee",
+			"phoneNumber" : "052000000002",
+			"address" : {
+				"streetAddress" : "",
+				"city" : "",
+				"state" : "",
+				"zipCode" : "",
+				"country" : ""
+			},
+			"area" : 1,
+			"sessions" : [
+				{
+					"activity" : 1,
+					"days" : [3],
+					"duration" : 60,
+					"groupMaxSize" : 5,
+					"pricePerSession" : 200,
+					"deals" :
+					{
+						"0" : "0",
+						"5" : "190",
+						"10" : "180",
+						"20" : "175"
+					}
+				},
+				{
+					"activity" : 2,
+					"days" : [5],
+					"duration" : 55,
+					"groupMaxSize" : 5,
+					"pricePerSession" : 180,
+					"deals" :
+					{
+						"0" : "0",
+						"5" : "175",
+						"10" : "170",
+						"20" : "160"
+					}
+				},
+
+			],
+		},{
+			"name" : "Chen Fogelman",
+			"imageUrl" : "http://www.limudnaim.co.il/sites/default/files/imagecache/profile-pic/trainer_profile/x12454.jpg.pagespeed.ic.PWSWbrHHHc.jpg",
+			"desctiption" : "I like to pee&poop",
+			"phoneNumber" : "052000000003",
+			"address" : {
+				"streetAddress" : "",
+				"city" : "",
+				"state" : "",
+				"zipCode" : "",
+				"country" : ""
+			},
+			"area" : 1,
+			"sessions" : [
+				{
+					"activity" : 1,
+					"days" : [0,6],
+					"duration" : 45,
+					"groupMaxSize" : 3,
+					"pricePerSession" : 270,
+					"deals" :
+					{
+						"5" : "265",
+						"10" : "260",
+						"20" : "255"
+					}
+				},
+				{
+					"activity" : 2,
+					"days" : [5],
+					"duration" : 45,
+					"groupMaxSize" : 3,
+					"pricePerSession" : 260,
+					"deals" :
+					{
+						"0" : "0"
+					}
+				},
+			],
+		},{
+			"name" : "Sapir Levy",
+			"imageUrl" : "http://www.limudnaim.co.il/sites/default/files/imagecache/profile-pic/trainer_profile/x14271.jpg.pagespeed.ic.xNSSrgzRxH.jpg",
+			"desctiption" : "I like to like",
+			"phoneNumber" : "052000000004",
+			"address" : {
+				"streetAddress" : "",
+				"city" : "",
+				"state" : "",
+				"zipCode" : "",
+				"country" : ""
+			},
+			"area" : 1,
+			"sessions" : [
+				{
+					"activity" : 1,
+					"days" : [3],
+					"duration" : 120,
+					"groupMaxSize" : 2,
+					"pricePerSession" : 300,
+					"deals" :
+					{
+						"20" : "250"
+					}
+				},
+				{
+					"activity" : 2,
+					"days" : [4,5],
+					"duration" : 120,
+					"groupMaxSize" : 2,
+					"pricePerSession" : 360,
+					"deals" :
+					{
+						"0" : "0"
+					}
+				},
+			],
+		}
+	],
+	"areas" : [
+		{
+			"label" : 1,
+			"value" : "Gush Dan"
+		},
+		{
+			"label" : 2,
+			"value" : "HaSharon"
+		},
+		{
+			"label" : 3,
+			"value" : "HaTzafon"
+		},
+		{
+			"label" : 4,
+			"value" : "HaDarom"
+		},
+		{
+			"label" : 5,
+			"value" : "HaShfela"
+		},
+	],
+	"activities" : [
+		"CrossFit", "TRX", "KickBox", "Pilates", "Spining", "Yoga", "Zumba", "Jogging"
+	]
+}
