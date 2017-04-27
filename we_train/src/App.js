@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SearchBar from './components/SearchBar.js';
+import SearchBar from './components/SearchBar/SearchBar.js';
 import Header from './components/header/Header.js';
 
 class App extends Component {
