@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import SearchBar from './components/SearchBar.js'
+import SearchBar from './components/SearchBar.js';
+import Header from './components/header/Header.js';
 
-//
 class App extends Component {
 
   render() {
  
     return (
-       <SearchBar/>
+    	<div className="container-fluid">
+	    	<Header/>
+			<SearchBar/>
+    	</div>
     );
   }
 }
