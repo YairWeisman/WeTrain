@@ -2,12 +2,12 @@
 .search-bar {
   position: relative;
   height: 50px;
-  top: 300px;
+  margin-top: -50px;
   padding-top: 5px;
   background: rgba(0,0,0,.2)
 }
 
-.search-bar button{
+.search-bar button {
   position: relative;
   left: 5px;
 }

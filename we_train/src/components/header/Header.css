@@ -1,7 +1,14 @@
 .upper-bar {
-  height: 100%;
   margin-top: 5px;
+}
+.align-right {
+  text-align: right !important;
+}
+
+.main-header {
   background-image: url("../../resources/towJogging.jpg");
+  background-size: cover;
+  height: 550px;
 }
 
 .login-signup-btn {

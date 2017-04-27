@@ -6,9 +6,9 @@ import { Row, Col, Image } from 'react-bootstrap';
 class Header extends Component {
   	render() {
 		return (
-			<div className="upper-bar">
+			<div className="main-header">
 				<Row className="upper-bar">
-					<Col lgOffset={10} lg={1} className="login-signup-btn">LOGIN</Col>
+					<Col lgOffset={10} lg={1} className="login-signup-btn align-right">LOGIN</Col>
 					<Col lg={1} className="login-signup-btn">SIGN UP</Col>
 				</Row>
 				<Row className="main-logo">
