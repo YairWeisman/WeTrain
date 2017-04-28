@@ -1,20 +1,17 @@
-.material-icons{
+.floating {
 	zoom: 2.4;
 }
 .star{
-	color: red;
 	position: fixed;
 	top: 7px;
 	left: 5px;
 }
 .up1{
-	color: red;
 	position: fixed;
 	bottom: 15px;
 	left: 5px;
 }
 .up2{
-	color: red;
 	position: fixed;
 	bottom: 7px;
 	left: 5px;
