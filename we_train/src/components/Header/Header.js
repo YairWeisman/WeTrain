@@ -12,9 +12,7 @@ class Header extends Component {
 					<Col lg={1} className="login-signup-btn">SIGN UP</Col>
 				</Row>
 				<Row className="main-logo">
-					<Col lg={3} lgOffset={4} className="logo">
-				        {/*<Image src="../resources/logo.png" circle />*/}
-					</Col>
+					<Col lg={3} lgOffset={4} className="logo">WeTrain</Col>
 				</Row>
 				<Row className="main-sentence">
 					<Col lg={6} lgOffset={3}>FIND YOUR PERFECT SPORT GROUP</Col>

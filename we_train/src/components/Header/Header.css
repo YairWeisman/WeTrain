@@ -23,11 +23,22 @@
 }
 
 .main-sentence {
-  margin-top: 200px;
+  margin-top: 25px;
   text-align: center;
   color: white;
   text-shadow: 3px 3px #2b011a;
   font: 56px arial;
   margin-right: 0px !important;
   
+}
+
+.main-logo {
+  margin-top: 150px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font: 130px arial;
+  margin-right: 0px !important;
+  margin-left: -60px !important;
+  -webkit-text-stroke: 2px black;
 }
