@@ -3,6 +3,8 @@ import SearchBar from './components/SearchBar/SearchBar.js';
 import Header from './components/Header/Header.js';
 import Card from './components/Card/Card.js';
 import FloatingButtons from './components/FloatingButtons/FloatingButtons.js';
+import AppFlow from './components/AppFlow/AppFlow.js';
+
 
 class App extends Component {
   constructor() {
@@ -28,6 +30,11 @@ class App extends Component {
 			<SearchBar sendQueryData={this.handleQuery}/>
 			<Card query={this.state.query}/>
       <FloatingButtons/>
+    	<div className="container-fluid">
+	    	<Header/>
+  			<SearchBar sendQueryData={this.handleQuery}/>
+        <Card query={this.state.query}/>
+        <AppFlow />
     	</div>
     );
   }

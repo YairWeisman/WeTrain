@@ -1,7 +1,60 @@
 .trainer-card {
-  width: 70%;
-  transform: translate(22.5%,0%);
-  background-color: rgba(176, 171, 163, 0.1);
-    border-bottom: 3px solid;
-    border-color: #ccc;
+	width: 70%;
+	transform: translate(22.5%,0%);
+	background-color: rgba(176, 171, 163, 0.1);
+	border-bottom: 3px solid;
+	border-color: #ccc;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 200px;
+}
+
+.trainer-card:hover{
+	/*opacity: 0.8;*/
+	background-color: rgba(0,0,0,0.1);
+}
+
+.trainer-name {
+	text-align: center;
+	font: 30px arial;
+}
+
+.trainer-pic {
+	height: 160px;
+}
+
+.trainer-pic .picture {
+    height: 150px;
+    margin: 5px;
+    margin-left: 25%
+}
+
+.training-details {
+	text-align: center;
+	font-family: arial;
+	padding-top: 5px;
+	padding-right: 30px;
+}
+.trainer-info {
+	text-align: right;
+	font-size: 20px;
+	height: 100px;
+}
+
+.trainer-info2 {
+	text-align: center;
+	font-family: arial;
+	font-size: 15px;
+	margin-top: 60px;
+}
+
+.value {
+    position: relative;
+    top: -27px;
+    right: -20px;
+}
+
+.deals {
+	position: relative;
+	top: -5px;
 }

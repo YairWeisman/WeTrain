@@ -6,35 +6,58 @@ import Data from '../../data.json';
 class BizCard extends Component {
 	render() {
 		return (
-				<Row>
-					<Row className="trainer-card">
-						<Col md={2} className="trainer-pic">
-							<Image src={this.props.imageUrl} circle />
-						</Col>
-						<Col md={10} className="trainer-info">
-								{this.props.desctiption}
-						</Col>
-					</Row>
-					<Row className="training-details">
-						<Col md={2} className="training-address">
-							<Col md={2} ><i className="material-icons md-18">room</i></Col>
-							<Col md={10} className="value">{this.props.area}</Col>
-						</Col>
-						<Col md={2} className="training-days">
-							<Col md={10} className="value">{this.props.days}</Col>
-						</Col>
-						<Col md={2} className="training-group-size">
-							<Col md={10} className="value">{this.props.groupMaxSize}</Col>
-						</Col>
-						<Col md={2} className="training-price">
-							<Col md={10} className="value">{this.props.price}</Col>
-						</Col>
-						<Col md={2} className="training-dur">
-							<Col md={10} className="value">{this.props.duration}</Col>
-						</Col>
-						<Col md={2} className="training-deals-btn">
-						</Col>
-					</Row>
+				<Row className="trainer-card">
+					<Col md={2} className="trainer-details">
+						<Row md={2} className="trainer-pic">
+							<Image src={this.props.imageUrl} circle className="picture"/>
+						</Row>
+						<Row md={10} className="trainer-name">
+								{this.props.name}
+						</Row>
+					</Col>
+					<Col md={10} className="training-details">
+						<Row className="trainer-info">
+							{this.props.desctiption}
+						</Row>
+						<Row className="trainer-info2">
+							<Col md={2} className="training-address">
+								<Row>
+									<Col md={2} ><i className="material-icons md-18">room</i></Col>
+									<Col md={10} className="value">{this.props.area}</Col>
+								</Row>
+							</Col>
+							<Col md={2} className="training-days">
+								<Row>
+									<Col md={2} ><i className="material-icons md-18">today</i></Col>
+									<Col md={10} className="value">{this.props.days}</Col>
+								</Row>
+							</Col>
+							<Col md={2} className="training-group-size">
+								<Row>
+									<Col md={2} ><i className="material-icons md-18">group</i></Col>
+									<Col md={10} className="value">{this.props.groupMaxSize}</Col>
+								</Row>
+							</Col>
+							<Col md={2} className="training-price">
+								<Row>
+									<Col md={2} ><i className="material-icons md-18">attach_money</i></Col>
+									<Col md={10} className="value">{this.props.price}</Col>
+								</Row>
+							</Col>
+							<Col md={2} className="training-dur">
+								<Row>
+									<Col md={2} ><i className="material-icons md-18">query_builder</i></Col>
+									<Col md={10} className="value">{this.props.duration}</Col>
+								</Row>
+							</Col>
+							<Col>
+								<Row>
+									<Col md={2} ><i className="material-icons md-18">redeem</i><span className="deals">Deals</span></Col>
+									<Col md={10} className="value"></Col>
+								</Row>
+							</Col>
+						</Row>
+					</Col>
 				</Row>
 		);
 	}
@@ -64,7 +87,8 @@ class Card extends Component {
 						groupMaxSize={s.groupMaxSize}
 						area={areas[trainer.area-1]}
 						price={Math.floor(s.pricePerSession/s.duration*60)}
-						duration={s.duration}/>
+						duration={s.duration}
+						name={trainer.name}/>
 			});
 			return session;
 		});

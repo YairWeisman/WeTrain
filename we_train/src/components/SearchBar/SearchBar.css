@@ -1,16 +1,26 @@
 
 .search-bar {
-  position: relative;
-  height: 50px;
-  margin-top: -50px;
-  padding-top: 5px;
-  background: rgba(0,0,0,.2)
+    height: 75px;
+    padding-top: 25px;
+    margin-top: -75px;
+    background: rgba(255,255,255,0.5);
 }
 
 .search-bar button {
   position: relative;
   left: 5px;
 }
+
+input[type="text"]::-webkit-input-placeholder{
+  color: #757575;
+}
+input[type="text"]::-moz-placeholder{ 
+  color: #757575;
+}
+input[type="text"]::-ms-placeholder{ 
+  color: #757575;
+}
+
 
 .Select {
   position: relative;
@@ -81,7 +91,7 @@
 .Select-placeholder,
 .Select--single > .Select-control .Select-value {
   bottom: 0;
-  color: #aaa;
+  color: #757575;
   left: 0;
   line-height: 34px;
   padding-left: 10px;
@@ -383,7 +393,7 @@
 }
 body {
   color: #333;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: arial, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.4;
   margin: 0;
