@@ -1,0 +1,30 @@
+.upper-bar {
+  margin-top: 5px;
+}
+.align-right {
+  text-align: right !important;
+}
+
+.main-header {
+  background-image: url("../../resources/towJogging.jpg");
+  background-size: cover;
+  height: 550px;
+}
+
+.login-signup-btn {
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.login-signup-btn:hover {
+  color: #8c8c8c;
+}
+
+.main-sentence {
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px #2b011a;
+  font: 56px BrandonText-Black;
+}
