@@ -45,7 +45,7 @@ class Selection extends Component {
   }
     render () {
         return (
-          <Select name="selected-area" placeholder="Select" options={this.state.selection}
+          <Select name="selected-area" placeholder={this.props.placeholder} options={this.state.selection}
            value={this.state.value} onChange={this.handleSelect} />
         );
   }
