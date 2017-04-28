@@ -4,16 +4,18 @@ import { Row, Col, Image } from 'react-bootstrap';
 import Data from '../../data.json';
 
 class BizCard extends Component {
- constructor() {
-    super();
-
-    this.state = {
-		lower: "hidden wrapper"
-    };
-  }
+	 constructor() {
+	    super();
+		this.handleSave = this.handleSave.bind(this); 
+	    this.state = {
+			lower: "hidden wrapper"
+	    };
+	  }
+	handleSave(data){
+		this.props.saveCard(data);
+	}
 
 	render() {
-		    console.log(this.props);
 		return (
 			<Row className="biz-card" >
 				<Row className="trainer-card" onClick={() => {
@@ -75,10 +77,10 @@ class BizCard extends Component {
 
 				<Row className={this.state.lower}>
 					<Col md={4} className="save-card">
-						<button onClick={() => this.props.saveCard("this")} className="btn btn-deafault">save</button>
+						<button onClick={() => this.handleSave(["this"])} className="btn btn-deafault">save</button>
 					</Col>
 					<Col md={4} className="contact">
-						<button className="btn btn-deafault">{this.props.number}</button>
+						<button bsStyle="primary">{this.props.number}</button>
 					</Col>
 					<Col md={4} className="share">
 						<button className="btn btn-deafault">save</button>
@@ -91,7 +93,14 @@ class BizCard extends Component {
 	}
 }
 class Card extends Component {
+	constructor() {
+	    super();
+	    this.handleSave = this.handleSave.bind(this); 
+	  }
 
+	handleSave(data){
+		this.props.saveCard(data);
+	}
   	render() {
   			const trainers = Data.trainers;
 			const activities = Data.activities;
@@ -118,7 +127,7 @@ class Card extends Component {
 						duration={s.duration}
 						name={trainer.name}
 						number={trainer.phoneNumber}
-						saveCard={this.props.saveCard}/>
+						saveCard={this.handleSave}/>
 			});
 			return session;
 		});
