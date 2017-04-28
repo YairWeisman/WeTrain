@@ -41,9 +41,9 @@
 						"10" : "35",
 						"20" : "25"
 					}
-				},
+				}
 
-			],
+			]
 		},{
 			"name" : "Elad Iash",
 			"imageUrl" : "http://www.limudnaim.co.il/sites/default/files/imagecache/profile-pic/trainer_profile/x9615.jpeg.pagespeed.ic.uPzF_aPYkf.jpg",
@@ -85,9 +85,9 @@
 						"10" : "70",
 						"20" : "65"
 					}
-				},
+				}
 
-			],
+			]
 		},{
 			"name" : "Meirav Elisha",
 			"imageUrl" : "http://www.limudnaim.co.il/sites/default/files/imagecache/profile-pic/trainer_profile/x14539.jpg.pagespeed.ic.BxhDwuArKR.jpg",
@@ -120,7 +120,7 @@
 					"activity" : 2,
 					"days" : [5],
 					"duration" : 55,
-					"groupMaxSize" : 5,
+					"groupMaxSize" : 1,
 					"pricePerSession" : 180,
 					"deals" :
 					{
@@ -129,9 +129,9 @@
 						"10" : "170",
 						"20" : "160"
 					}
-				},
+				}
 
-			],
+			]
 		},{
 			"name" : "Chen Fogelman",
 			"imageUrl" : "http://www.limudnaim.co.il/sites/default/files/imagecache/profile-pic/trainer_profile/x12454.jpg.pagespeed.ic.PWSWbrHHHc.jpg",
@@ -169,11 +169,11 @@
 					{
 						"0" : "0"
 					}
-				},
-			],
+				}
+			]
 		},{
 			"name" : "Sapir Levy",
-			"imageUrl" : "http://www.limudnaim.co.il/sites/default/files/imagecache/profile-pic/trainer_profile/x14271.jpg.pagespeed.ic.xNSSrgzRxH.jpg",
+			"imageUrl" : "www.limudnaim.co.il/sites/default/files/imagecache/profile-pic/trainer_profile/x14271.jpg.pagespeed.ic.xNSSrgzRxH.jpg",
 			"desctiption" : "I like to like",
 			"phoneNumber" : "052000000004",
 			"address" : {
@@ -206,8 +206,8 @@
 					{
 						"0" : "0"
 					}
-				},
-			],
+				}
+			]
 		}
 	],
 	"areas" : [
@@ -230,9 +230,10 @@
 		{
 			"label" : 5,
 			"value" : "HaShfela"
-		},
+		}
 	],
 	"activities" : [
 		"CrossFit", "TRX", "KickBox", "Pilates", "Spining", "Yoga", "Zumba", "Jogging"
-	]
+	],
+	"group_size": {"Personal": 1, "Up to two": 2, "Up to five": 5, "Up to ten": 10, "More than ten": null}
 }
