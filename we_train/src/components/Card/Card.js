@@ -73,13 +73,29 @@ class BizCard extends Component {
 
 				<Row className={this.state.lower}>
 					<Col md={4} className="save-card">
-						<button onClick={() => this.props.saveCard([this])} className="btn btn-deafault">save</button>
+						<button onClick={() => this.handleSave(["this"])} className="btn btn-deafault">
+							<Row>
+								<Col md={2}><i className="material-icons md-18">star_rate</i></Col>
+								<Col md={10}>Save Trained</Col>
+							</Row>
+						</button>
 					</Col>
 					<Col md={4} className="contact">
-						<button bsStyle="primary">{this.props.number}</button>
+						<button bsStyle="primary" className="btn btn-primary">
+							<Row>
+									<Col md={2}><i className="material-icons md-18">phone</i></Col>
+									<Col md={10}>{this.props.number}</Col>
+							</Row>
+						
+						</button>
 					</Col>
 					<Col md={4} className="share">
-						<button className="btn btn-deafault">save</button>
+						<button className="btn btn-deafault">
+							<Row>
+								<Col md={2}><i className="material-icons md-18">share</i></Col>
+								<Col md={10}>Share</Col>
+							</Row>
+						</button>
 
 					</Col>
 				</Row>
