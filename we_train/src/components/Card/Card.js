@@ -9,7 +9,7 @@ class BizCard extends Component {
 				<Row className="trainer-card">
 					<Col md={2} className="trainer-details">
 						<Row md={2} className="trainer-pic">
-							<Image src={this.props.imageUrl} circle />
+							<Image src={this.props.imageUrl} circle className="picture"/>
 						</Row>
 						<Row md={10} className="trainer-name">
 								{this.props.name}
