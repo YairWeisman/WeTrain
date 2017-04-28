@@ -4,4 +4,16 @@
   background-color: rgba(176, 171, 163, 0.1);
     border-bottom: 3px solid;
     border-color: #ccc;
+        margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.trainer-card:hover{
+	/*opacity: 0.8;*/
+	background-color: rgba(0,0,0,0.1);
+}
+
+.trainer-name {
+	text-align: center;
+	font: 30px arial;
 }
