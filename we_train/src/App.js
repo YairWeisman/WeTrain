@@ -15,6 +15,7 @@ class App extends Component {
       savedCards: []
     };
     this.handleQuery = this.handleQuery.bind(this); 
+    this.handleSaved = this.handleSaved.bind(this); 
   }
   handleQuery(query){
   	this.setState({ query: query });
@@ -22,6 +23,7 @@ class App extends Component {
   handleSaved(data){
     const savedCards = this.state.savedCards.slice();
     data = data.concat(savedCards);
+    console.log(data);
     this.setState({savedCards: data});
   }
   render() {
@@ -31,7 +33,7 @@ class App extends Component {
   			<SearchBar sendQueryData={this.handleQuery}/>
   			<Card query={this.state.query}/>
         <FloatingButtons/>
-        <Card query={this.state.query}/>
+        <Card query={this.state.query} saveCard={this.handleSaved}/>
         <AppFlow/>
     	</div>
     );
