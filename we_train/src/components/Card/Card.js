@@ -76,15 +76,15 @@ class BizCard extends Component {
 						<button onClick={() => this.props.saveCard([this])} className="btn btn-deafault">
 							<Row>
 								<Col md={2}><i className="material-icons md-18">star_rate</i></Col>
-								<Col md={10}>Save Trained</Col>
+								<Col md={8}>Save</Col>
 							</Row>
 						</button>
 					</Col>
-					<Col md={4} className="contact">
+					<Col md={4} mdOffset={1} className="contact">
 						<button bsStyle="primary" className="btn btn-primary">
 							<Row>
 									<Col md={2}><i className="material-icons md-18">phone</i></Col>
-									<Col md={10}>{this.props.number}</Col>
+									<Col md={8}>{this.props.number}</Col>
 							</Row>
 						
 						</button>
@@ -93,7 +93,7 @@ class BizCard extends Component {
 						<button className="btn btn-deafault">
 							<Row>
 								<Col md={2}><i className="material-icons md-18">share</i></Col>
-								<Col md={10}>Share</Col>
+								<Col md={8} className="share-btn">Share</Col>
 							</Row>
 						</button>
 
