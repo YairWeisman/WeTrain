@@ -75,13 +75,13 @@ class BizCard extends Component {
 
 				<Row className={this.state.lower}>
 					<Col md={4} className="save-card">
-						<button onClick={() => this.props.saveCard("this")} className="btn btn-deafault">save</button>
+						<button onClick={() => this.props.saveCard("this")} className="btn btn-deafault">Save Trainer</button>
 					</Col>
 					<Col md={4} className="contact">
 						<button className="btn btn-deafault">{this.props.number}</button>
 					</Col>
 					<Col md={4} className="share">
-						<button className="btn btn-deafault">save</button>
+						<button className="btn btn-deafault">Share</button>
 
 					</Col>
 				</Row>
