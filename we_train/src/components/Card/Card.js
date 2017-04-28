@@ -8,7 +8,7 @@ class BizCard extends Component {
     super();
 
     this.state = {
-		lower: "hidden"
+		lower: "hidden wrapper"
     };
   }
 
@@ -17,8 +17,8 @@ class BizCard extends Component {
 		return (
 			<Row className="biz-card" >
 				<Row className="trainer-card" onClick={() => {
-					if (this.state.lower == "hidden") this.setState({lower: "visible"})
-					else this.setState({lower: "hidden"})
+					if (this.state.lower == "hidden wrapper") this.setState({lower: "visible wrapper"})
+					else this.setState({lower: "hidden wrapper"})
 				} }>
 					<Col md={2} className="trainer-details">
 						<Row md={2} className="trainer-pic">
