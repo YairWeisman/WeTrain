@@ -68,5 +68,9 @@
     border-color: #ccc;
     height: 67px;
     margin-top: -29px;
-    padding-left: 140px;
+    padding-left: 130px;
+}
+
+.share-btn {
+	float: left;
 }
