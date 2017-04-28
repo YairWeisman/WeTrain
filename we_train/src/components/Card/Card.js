@@ -6,14 +6,10 @@ import Data from '../../data.json';
 class BizCard extends Component {
 	 constructor() {
 	    super();
-		this.handleSave = this.handleSave.bind(this); 
 	    this.state = {
 			lower: "hidden wrapper"
 	    };
 	  }
-	handleSave(data){
-		this.props.saveCard(data);
-	}
 
 	render() {
 		return (
@@ -77,7 +73,7 @@ class BizCard extends Component {
 
 				<Row className={this.state.lower}>
 					<Col md={4} className="save-card">
-						<button onClick={() => this.handleSave(["this"])} className="btn btn-deafault">save</button>
+						<button onClick={() => this.props.saveCard([this])} className="btn btn-deafault">save</button>
 					</Col>
 					<Col md={4} className="contact">
 						<button bsStyle="primary">{this.props.number}</button>
@@ -95,12 +91,8 @@ class BizCard extends Component {
 class Card extends Component {
 	constructor() {
 	    super();
-	    this.handleSave = this.handleSave.bind(this); 
 	  }
 
-	handleSave(data){
-		this.props.saveCard(data);
-	}
   	render() {
   			const trainers = Data.trainers;
 			const activities = Data.activities;
@@ -127,7 +119,7 @@ class Card extends Component {
 						duration={s.duration}
 						name={trainer.name}
 						number={trainer.phoneNumber}
-						saveCard={this.handleSave}/>
+						saveCard={this.props.saveCard}/>
 			});
 			return session;
 		});
