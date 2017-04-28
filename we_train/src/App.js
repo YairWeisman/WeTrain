@@ -31,7 +31,6 @@ class App extends Component {
     	<div>
   	    <Header/>
   			<SearchBar sendQueryData={this.handleQuery}/>
-  			<Card query={this.state.query}/>
         <FloatingButtons/>
         <Card query={this.state.query} saveCard={this.handleSaved}/>
         <AppFlow/>
