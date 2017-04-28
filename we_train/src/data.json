@@ -211,26 +211,10 @@
 		}
 	],
 	"areas" : [
-		{
-			"label" : 1,
-			"value" : "Gush Dan"
-		},
-		{
-			"label" : 2,
-			"value" : "HaSharon"
-		},
-		{
-			"label" : 3,
-			"value" : "HaTzafon"
-		},
-		{
-			"label" : 4,
-			"value" : "HaDarom"
-		},
-		{
-			"label" : 5,
-			"value" : "HaShfela"
-		}
+				"Gush Dan",
+				"HaSharon",
+				"HaTzafon",
+				"HaShfela"
 	],
 	"activities" : [
 		"CrossFit", "TRX", "KickBox", "Pilates", "Spining", "Yoga", "Zumba", "Jogging"
