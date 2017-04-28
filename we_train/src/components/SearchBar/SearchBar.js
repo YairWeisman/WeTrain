@@ -100,7 +100,6 @@ class SearchBar extends Component {
             </Col>
             <Col sm={2}>
               <button className="btn btn-success" onClick={() => this.handleSearch()}>Look Up Groups</button>
-               </Col>
             </Col>
       </Row>
     );
