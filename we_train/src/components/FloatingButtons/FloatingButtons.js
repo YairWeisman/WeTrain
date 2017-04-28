@@ -8,29 +8,21 @@ class FloatingButtons extends Component {
     this.state = {
       showModal : false
     };
-  }
-  getInitialState() {
-    return { showModal: false };
-  }
+    this.handleClose = this.handleClose.bind(this); 
+    this.handleOpen = this.handleOpen.bind(this); 
 
-  close() {
+  }
+  
+  handleClose() {
     this.setState({ showModal: false });
   }
 
-  open() {
+  handleOpen() {
     this.setState({ showModal: true });
   }
   render() {
-    const popover = (
-      <Popover id="modal-popover" title="popover">
-        very popover. such engagement
-      </Popover>
-    );
-    const tooltip = (
-      <Tooltip id="modal-tooltip">
-        wow.
-      </Tooltip>
-    );
+    
+
     return (
       <div>
         <div>
@@ -39,16 +31,16 @@ class FloatingButtons extends Component {
               <Modal.Title>Saved Trainers</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            {this.props.biz}
             </Modal.Body>
             <Modal.Footer>
-              <Button onClick={this.close}>Close</Button>
+              <Button onClick={this.handleClose}>Close</Button>
             </Modal.Footer>
           </Modal>
         </div>
 
       	<div className="floatings">
-            <span onClick={this.open}>
+            <span onClick={this.handleOpen}>
               <i className="floating material-icons md-48 star">stars</i>
             </span>
               <div className="circle" onClick={() => window.scrollTo(0, 0)}>
