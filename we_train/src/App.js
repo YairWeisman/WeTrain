@@ -26,15 +26,12 @@ class App extends Component {
   render() {
     return (
     	<div>
-	    <Header/>
-			<SearchBar sendQueryData={this.handleQuery}/>
-			<Card query={this.state.query}/>
-      <FloatingButtons/>
-    	<div className="container-fluid">
-	    	<Header/>
+  	    <Header/>
   			<SearchBar sendQueryData={this.handleQuery}/>
+  			<Card query={this.state.query}/>
+        <FloatingButtons/>
         <Card query={this.state.query}/>
-        <AppFlow />
+        <AppFlow/>
     	</div>
     );
   }
