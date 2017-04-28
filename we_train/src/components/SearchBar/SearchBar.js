@@ -45,7 +45,7 @@ class Selection extends Component {
   }
     render () {
         return (
-          <Select name="selected-area" placeholder="Select" options={this.state.selection}
+          <Select name="selected-area" placeholder={this.props.placeholder} options={this.state.selection}
            value={this.state.value} onChange={this.handleSelect} />
         );
   }
@@ -94,7 +94,7 @@ class SearchBar extends Component {
   };
     return (
 
-       <div className="row search-bar">
+       <Row className="search-bar">
             <Col sm={2} smOffset={1}>
               <Selection name={"activity"} location={0} selection={options.activies} selected={this.handleSelectState} placeholder="Choose Avtivity"/>
              </Col>
@@ -104,15 +104,13 @@ class SearchBar extends Component {
             <Col sm={2}>
               <Selection name={"group_size"} location={2} selection={options.group_size} selected={this.handleSelectState} placeholder="Groups Size"/>
             </Col>
-            <Col sm={4}>
-              <Col sm={6}>
+            <Col sm={2}>
               <FormControl name={"group_size"} type="text" onChange={(e) => this.handleSelectState("price",3,e.target.value)} placeholder="Price per hour (max)" />
-              </Col>
-              <Col sm={6}>
-              <button type="submit" className="btn btn-success" onClick={() => this.handleSearch()}>Look Up Groups</button>
-              </Col>
             </Col>
-      </div>
+            <Col sm={2}>
+              <button type="submit" className="btn btn-success" onClick={() => this.handleSearch()}>Look Up Groups</button>
+            </Col>
+      </Row>
     );
   }
 }
