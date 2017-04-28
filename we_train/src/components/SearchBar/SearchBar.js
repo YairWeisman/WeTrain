@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './SearchBar.css';
 import Select from 'react-select';
-import {Form, FormGroup,FormControl, Row, Col}from 'react-bootstrap';
-
+import {Form, FormGroup,FormControl, Row, Col} from 'react-bootstrap';
 // class SearchButton extends Component {
 //   constructor() {
 //       super();
@@ -82,13 +81,7 @@ class SearchBar extends Component {
                            { value: 'Up to two', label: 'Up to two' },
                            { value: 'Up to five', label: 'Up to five' },
                            { value: 'Up to ten', label: 'Up to ten' },
-                           { value: 'More than ten', label: 'More than ten' }],
-              // time_range: [{ value: '06:00-09:00', label: '06:00-09:00' },
-              //              { value: '09:00-12:00', label: '09:00-12:00' },
-              //              { value: '12:00-15:00', label: '12:00-15:00' },
-              //              { value: '15:00-18:00', label: '15:00-18:00' },
-              //              { value: '18:00-21:00', label: '18:00-21:00' },
-              //              { value: '21:00-24:00', label: '21:00-24:00' }]
+                           { value: 'More than ten', label: 'More than ten' }]
   };
     return (
 
@@ -107,8 +100,8 @@ class SearchBar extends Component {
               <FormControl name={"group_size"} type="text" onChange={(e) => this.handleSelectState("price",3,e.target.value)} placeholder="Price per hour (max)" />
               </Col>
               <Col sm={6}>
-              <button type="submit" className="btn btn-success" onClick={() => this.handleSearch()}>Look Up Groups</button>
-              </Col>
+              <button className="btn btn-success" onClick={() => this.handleSearch()}>Look Up Groups</button>
+               </Col>
             </Col>
       </div>
     );
