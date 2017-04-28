@@ -59,13 +59,11 @@ class SearchBar extends Component {
         };
         this.handleSelectState = this.handleSelectState.bind(this); 
         this.handleSearch = this.handleSearch.bind(this);  
-
       }
   handleSelectState(name ,location, value){
     var selected = this.state.selected.slice();
     selected[location][name] = value;
     this.setState({ selected: selected });
-    //console.log(this.state.selected);
   }
 
   handleSearch(){
