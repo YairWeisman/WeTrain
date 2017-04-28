@@ -19,39 +19,42 @@ class BizCard extends Component {
 						<Row className="trainer-info">
 							{this.props.desctiption}
 						</Row>
-						<Row>
+						<Row className="trainer-info2">
 							<Col md={2} className="training-address">
-							<Row>
-								<Col md={2} ><i className="material-icons md-18">room</i></Col>
-								<Col md={10} className="value">{this.props.area}</Col>
-							</Row>
+								<Row>
+									<Col md={2} ><i className="material-icons md-18">room</i></Col>
+									<Col md={10} className="value">{this.props.area}</Col>
+								</Row>
 							</Col>
 							<Col md={2} className="training-days">
 								<Row>
-								<Col md={2} ><i className="material-icons md-18">today</i></Col>
-								<Col md={10} className="value">{this.props.days}</Col>
-							</Row>
+									<Col md={2} ><i className="material-icons md-18">today</i></Col>
+									<Col md={10} className="value">{this.props.days}</Col>
+								</Row>
 							</Col>
 							<Col md={2} className="training-group-size">
 								<Row>
-								<Col md={2} ><i className="material-icons md-18">group</i></Col>
-								<Col md={10} className="value">{this.props.groupMaxSize}</Col>
-							</Row>
+									<Col md={2} ><i className="material-icons md-18">group</i></Col>
+									<Col md={10} className="value">{this.props.groupMaxSize}</Col>
+								</Row>
 							</Col>
 							<Col md={2} className="training-price">
 								<Row>
-								<Col md={2} ><i className="material-icons md-18">attach_money</i></Col>
-								<Col md={10} className="value">{this.props.price}</Col>
-							</Row>
+									<Col md={2} ><i className="material-icons md-18">attach_money</i></Col>
+									<Col md={10} className="value">{this.props.price}</Col>
+								</Row>
 							</Col>
 							<Col md={2} className="training-dur">
 								<Row>
-								<Col md={2} ><i className="material-icons md-18">query_builder</i></Col>
-								<Col md={10} className="value">{this.props.duration}</Col>
-							</Row>
+									<Col md={2} ><i className="material-icons md-18">query_builder</i></Col>
+									<Col md={10} className="value">{this.props.duration}</Col>
+								</Row>
 							</Col>
-								<Col md={2} ><i className="material-icons md-18">redeem</i>Deals</Col>
-								<Col md={2} className="training-deals-btn">
+							<Col>
+								<Row>
+									<Col md={2} ><i className="material-icons md-18">redeem</i><span className="deals">Deals</span></Col>
+									<Col md={10} className="value"></Col>
+								</Row>
 							</Col>
 						</Row>
 					</Col>

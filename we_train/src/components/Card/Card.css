@@ -28,3 +28,33 @@
     margin: 5px;
     margin-left: 25%
 }
+
+.training-details {
+	text-align: center;
+	font-family: arial;
+	padding-top: 5px;
+	padding-right: 30px;
+}
+.trainer-info {
+	text-align: right;
+	font-size: 20px;
+	height: 100px;
+}
+
+.trainer-info2 {
+	text-align: center;
+	font-family: arial;
+	font-size: 15px;
+	margin-top: 60px;
+}
+
+.value {
+    position: relative;
+    top: -27px;
+    right: -20px;
+}
+
+.deals {
+	position: relative;
+	top: -5px;
+}
