@@ -97,16 +97,10 @@ class SearchBar extends Component {
             </Col>
             <Col sm={2}>
               <FormControl name={"group_size"} type="text" onChange={(e) => this.handleSelectState("price",3,e.target.value)} placeholder="Price per hour (max)" />
-<<<<<<< HEAD
             </Col>
             <Col sm={2}>
-              <button type="submit" className="btn btn-success" onClick={() => this.handleSearch()}>Look Up Groups</button>
-=======
-              </Col>
-              <Col sm={6}>
               <button className="btn btn-success" onClick={() => this.handleSearch()}>Look Up Groups</button>
                </Col>
->>>>>>> tomer
             </Col>
       </Row>
     );

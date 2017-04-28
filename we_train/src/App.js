@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 import SearchBar from './components/SearchBar/SearchBar.js';
 import Header from './components/Header/Header.js';
 import Card from './components/Card/Card.js';
+<<<<<<< HEAD
 import AppFlow from './components/AppFlow/AppFlow.js';
 import FloatingButtons from './components/FloatingButtons/FloatingButtons.js';
+=======
+import FloatingButtons from './components/FloatingButtons/FloatingButtons.js';
+import AppFlow from './components/AppFlow/AppFlow.js';
+>>>>>>> tomer
 
 
 class App extends Component {
@@ -25,12 +30,22 @@ class App extends Component {
   }
   render() {
     return (
+<<<<<<< HEAD
 
     	<div>
 	    <Header/>
 			<SearchBar sendQueryData={this.handleQuery}/>
 			<Card query={this.state.query}/>
       <FloatingButtons/>
+=======
+    	<div>
+  	    <Header/>
+  			<SearchBar sendQueryData={this.handleQuery}/>
+  			<Card query={this.state.query}/>
+        <FloatingButtons/>
+        <Card query={this.state.query}/>
+        <AppFlow/>
+>>>>>>> tomer
     	</div>
     );
   }
