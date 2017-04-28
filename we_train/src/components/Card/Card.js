@@ -4,9 +4,22 @@ import { Row, Col, Image } from 'react-bootstrap';
 import Data from '../../data.json';
 
 class BizCard extends Component {
+ constructor() {
+    super();
+
+    this.state = {
+		lower: "hidden"
+    };
+  }
+
 	render() {
+		    console.log(this.props);
 		return (
-				<Row className="trainer-card">
+			<Row className="biz-card" >
+				<Row className="trainer-card" onClick={() => {
+					if (this.state.lower == "hidden") this.setState({lower: "visible"})
+					else this.setState({lower: "hidden"})
+				} }>
 					<Col md={2} className="trainer-details">
 						<Row md={2} className="trainer-pic">
 							<Image src={this.props.imageUrl} circle className="picture"/>
@@ -59,6 +72,21 @@ class BizCard extends Component {
 						</Row>
 					</Col>
 				</Row>
+
+				<Row className={this.state.lower}>
+					<Col md={4} className="save-card">
+						<button onClick={() => this.props.saveCard("this")} className="btn btn-deafault">save</button>
+					</Col>
+					<Col md={4} className="contact">
+						<button className="btn btn-deafault">{this.props.number}</button>
+					</Col>
+					<Col md={4} className="share">
+						<button className="btn btn-deafault">save</button>
+
+					</Col>
+				</Row>
+			</Row>
+
 		);
 	}
 }
@@ -88,7 +116,9 @@ class Card extends Component {
 						area={areas[trainer.area-1]}
 						price={Math.floor(s.pricePerSession/s.duration*60)}
 						duration={s.duration}
-						name={trainer.name}/>
+						name={trainer.name}
+						number={trainer.phoneNumber}
+						saveCard={this.props.saveCard}/>
 			});
 			return session;
 		});
