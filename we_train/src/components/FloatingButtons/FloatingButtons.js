@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './FloatingButtons.css';
 import { Collapse, Button, Tooltip, Popover, OverlayTrigger, Modal } from 'react-bootstrap';
+import Card, {BizCard} from '../Card/Card.js';
+import createFragment from 'react-addons-create-fragment';
 
 class FloatingButtons extends Component {
   constructor() {
@@ -21,8 +23,15 @@ class FloatingButtons extends Component {
     this.setState({ showModal: true });
   }
   render() {
-    
-
+    const b = <BizCard/>
+    if (this.props.biz.length > 0){
+    var a = <BizCard {...this.props.biz[0].props} />
+    console.log (a,b)
+    }
+    else {
+      var a = null
+    };
+    //const children = createFragment({"first": a});                   
     return (
       <div>
         <div>
@@ -30,8 +39,9 @@ class FloatingButtons extends Component {
             <Modal.Header closeButton>
               <Modal.Title>Saved Trainers</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
-                            {this.props.biz}
+            <Modal.Body> 
+             children
+              {a}
             </Modal.Body>
             <Modal.Footer>
               <Button onClick={this.handleClose}>Close</Button>

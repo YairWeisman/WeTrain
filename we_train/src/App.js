@@ -23,15 +23,16 @@ class App extends Component {
   handleSaved(data){
     const savedCards = this.state.savedCards.slice();
     data = data.concat(savedCards);
-    console.log(data);
+   
     this.setState({savedCards: data});
+     console.log(this.state.savedCards);
   }
   render() {
     return (
     	<div>
   	    <Header/>
   			<SearchBar sendQueryData={this.handleQuery}/>
-        <FloatingButtons biz={this.state.saveCard}/>
+        <FloatingButtons biz={this.state.savedCards}/>
         <Card query={this.state.query} saveCard={this.handleSaved}/>
         <AppFlow/>
     	</div>
